@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
+    <ion-title>Astronomy Picture of the Day</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-card>
+        <ion-img [src]="picURL"></ion-img>
+        <ion-card-header><ion-card-title>{{ picTitle }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Image Credits: {{ picCredit }}</p>
+          <br>
+          <p>Image Date: {{ picDate }}</p>
+          <br>
+          <p>{{ picExplain }}</p>
+          <br>
+        </ion-card-content>
+      </ion-card>
+</ion-content>
